@@ -1,0 +1,16 @@
+domain: ai.cast
+layout:
+- go.kubebuilder.io/v3
+projectName: distributed-cowboys
+repo: ai.cast/distributed-cowboys
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: ai.cast
+  group: demo
+  kind: Cowboy
+  path: ai.cast/distributed-cowboys/api/v1
+  version: v1
+version: "3"

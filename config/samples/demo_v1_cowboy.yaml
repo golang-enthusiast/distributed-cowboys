@@ -1,0 +1,16 @@
+apiVersion: demo.ai.cast/v1
+kind: Cowboy
+metadata:
+  name: cowboy-sample
+spec:
+  image: "<todo>"
+  imagePullPolicy: Never
+  cowboys:
+    - John
+    - Bill
+    - Sam
+  envVars:
+    - name: AWS_MOCK_SERVER_ADDRESS
+      value: "TEST_ADDRESS"  
+    - name: AWS_REGION
+      value: "TEST_REGION"

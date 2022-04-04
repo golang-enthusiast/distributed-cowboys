@@ -1,0 +1,24 @@
+# permissions for end users to edit cowboys.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cowboy-editor-role
+rules:
+- apiGroups:
+  - demo.ai.cast
+  resources:
+  - cowboys
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - demo.ai.cast
+  resources:
+  - cowboys/status
+  verbs:
+  - get
